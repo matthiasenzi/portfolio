@@ -1,9 +1,9 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col } from 'react-bootstrap';
-import Title from '../Title/Title';
-import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
+import AboutImg from '../Image/AboutImg';
+import Title from '../Title/Title';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -39,14 +39,14 @@ const About = () => {
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                    'I am a austrian based developer with 15 years of B2B sales and business development experience.'}
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                    'Recently I got into web and app development preferably using React, JavaScript, HTML & CSS and much more.'}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                  {paragraphThree || 'Please feel free to take a look into my resume.'}
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
